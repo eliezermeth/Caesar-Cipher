@@ -37,13 +37,9 @@ There are six text documents contained within the documents folder.  They are:
 ---
 #### Footnotes
 
-[^1]: Python can work as both a functional and object-oriented programming language.  What we wish to do here is use the object-oriented side, while not incurring the normal expense.  Normally, when creating a class (e.g. any class that has an `__init__` method), the computer must spend resources to both instantiate the class (create it) and house it for the lifetime of its use.
-
-  **`CaesarShift`** does not need to be created every time it is to be used.  It can be used by multiple classes with no difference in results.  It retains no information itself, but receives, manipulates, and returns the data without remembering any.
-
-  For a normal class, when a program is compiled, the class object is not created.  If we use a `Car` class as an example, it is only when a new object of the class is created (`car = Car()`) would a new instance of `Car` be created.  A second instance of the object can be created (`car_2 = Car()`), and a third, etc.  Each one of these must be created and stored.
-
-  This is not what we want for **`CaesarShift`**.  Many programming languages contain a **static** keyword, which allows a variable, method, or class to have only one existence.  Instead of creating multiple objects, when the program is compiled, one instance of this static object is created and stored.  All references to this object point to this, which saves on both space and time, as only one instance is ever created for runtime.
-
+[^1]: Python can work as both a functional and object-oriented programming language.  What we wish to do here is use the object-oriented side, while not incurring the normal expense.  Normally, when creating a class (e.g. any class that has an `__init__` method), the computer must spend resources to both instantiate the class (create it) and house it for the lifetime of its use.<br>
+  **`CaesarShift`** does not need to be created every time it is to be used.  It can be used by multiple classes with no difference in results.  It retains no information itself, but receives, manipulates, and returns the data without remembering any.<br>
+  For a normal class, when a program is compiled, the class object is not created.  If we use a `Car` class as an example, it is only when a new object of the class is created (`car = Car()`) would a new instance of `Car` be created.  A second instance of the object can be created (`car_2 = Car()`), and a third, etc.  Each one of these must be created and stored.<br>
+  This is not what we want for **`CaesarShift`**.  Many programming languages contain a **static** keyword, which allows a variable, method, or class to have only one existence.  Instead of creating multiple objects, when the program is compiled, one instance of this static object is created and stored.  All references to this object point to this, which saves on both space and time, as only one instance is ever created for runtime.<br>
   Although Python does not possess **static**, similar behavior can be invoked by creating **`CaesarShift`** as a module rather than a class.  Like the **`turtle`** and **`math`** modules, it can be imported and its methods used directly.  Under a file the encompassing module name (like **`math`**), all methods definitions are written directly to the file, without using the `class` keyword.
 
